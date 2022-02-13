@@ -62,12 +62,12 @@ function App() {
     return null;
   }
   return (
-    <div className="App">
-      <header className="App-header">
-      {
-        selectedProduct === null? (<Product product={product} setProductDetails={setProductDetails} />) : (<ProductDetails selectedProduct={selectedProduct} setProductDetails={setProductDetails} />)
-      } 
-      </header>
+    <div className="container">
+        <div className="row">
+            {
+                selectedProduct === null? (<Product product={product} setProductDetails={setProductDetails} />) : (<ProductDetails selectedProduct={selectedProduct} setProductDetails={setProductDetails} />)
+            } 
+        </div>
     </div>
   );
 }
