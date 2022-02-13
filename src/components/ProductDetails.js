@@ -1,12 +1,13 @@
 import React from 'react'
 
-function ProductDetails({product}) {
+function ProductDetails({selectedProduct, setProductDetails}) {
 	return (
 		<div>
-			<p>Product Name:{product.name}</p>
-			<p>Description:{product.description}</p>
-			<p>Price:{product.price}</p>
-			<p>Category:{product.category}</p>
+			<p>Product Name:{selectedProduct.name}</p>
+			<p>Description:{selectedProduct.description}</p>
+			<p>Price:{selectedProduct.price}</p>
+			<p>Category:{selectedProduct.category}</p>
+			<button onClick={() => setProductDetails(null)}>Back to product list</button>
 		</div>
 	)
 }
