@@ -8,7 +8,7 @@ function ProductDetails({selectedProduct, setProductDetails}) {
 			<p><strong>Description: </strong>{selectedProduct.description}</p>
 			<p><strong>Price: </strong>{selectedProduct.price}</p>
 			<p><strong>Category: </strong>{selectedProduct.category}</p>
-			<button onClick={() => setProductDetails(null)}>Back to product list</button>
+			<button className="btn btn-success" onClick={() => setProductDetails(null)}>Back to product list</button>
 		</div>
 	)
 }

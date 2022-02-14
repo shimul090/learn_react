@@ -19,7 +19,7 @@ function Product({product, setProductDetails}) {
 						<td>{item.id}</td>
 						<td>{item.name}</td>
 						<td>{item.price}</td>
-						<td><button onClick={() => setProductDetails(item)}>See Details</button></td>
+						<td><button className="btn btn-primary" onClick={() => setProductDetails(item)}>See Details</button></td>
 					</tr>
 					))}
 				</tbody>
